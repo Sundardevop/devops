@@ -1,0 +1,37 @@
+
+Set up the docker repository
+-----------------------------
+
+$ sudo apt-get update
+$ sudo apt-get install apt-transport-https ca-certificates curl software-properties-common
+$ curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+$ sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu $(lsb_release -cs) stable"
+
+Install Docker CE
+------------------
+$ sudo apt-get update
+$ sudo apt-get install docker-ce
+
+Verify the installation
+-----------------------
+
+Easiest way to install docker on Ubuntu using following command that you can get from the https://get.docker.com/
+
+This script is meant for quick & easy install via:
+
+$ curl -fsSL https://get.docker.com | sh
+or
+
+wget -qO- https://get.docker.com/ | sh
+For test builds (ie. release candidates):
+
+$ curl -fsSL https://test.docker.com | sh
+or
+
+ wget -qO- https://test.docker.com/ | sh
+For rc build with experimental feature:
+
+$ curl -fsSL https://experimental.docker.com | sh
+or
+
+ wget -qO- https://experimental.docker.com/ | sh
